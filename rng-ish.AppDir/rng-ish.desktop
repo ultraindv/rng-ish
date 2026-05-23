@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=rng-ish
+Exec=/usr/bin/rng-ish
+Icon=rng-ish
+Terminal=true
+Categories=Utility;

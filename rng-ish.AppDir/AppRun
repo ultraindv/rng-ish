@@ -1,0 +1,12 @@
+#!/bin/bash
+HERE="$(dirname "$(readlink -f "${0}")")"
+BINARY="${HERE}/usr/bin/rng-ish"
+
+if [ -t 0 ]; then
+
+    exec "$BINARY" "$@"
+else
+
+    x-terminal-emulator -e "$BINARY"
+fi
+
