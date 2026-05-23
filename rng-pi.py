@@ -9,7 +9,7 @@ console = Console()
 
 while True:
     pi_digits = str(mp.pi)[2:]
-    rng = random.randint(pi_digits)
+    rng = random.choice(pi_digits)
 
     os.system("clear")
 
