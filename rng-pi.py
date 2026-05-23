@@ -14,7 +14,7 @@ while True:
     os.system("clear")
 
     rnoutput = Text(f"{rng}", style="bold #add8e6", justify="center")
-    console.print(Panel(rnoutput, title="rng-ish", subtitle="Happy [bold red]Late[/bold red] Pi Day, From UltrainDV" border_style="#00008B"))
+    console.print(Panel(rnoutput, title="rng-ish", subtitle="Happy [bold red]Late[/bold red] Pi Day, From UltrainDV", border_style="#00008B"))
     
     console.print("Press Enter To Roll", style="bold #add8e6")
     console.print("To Exit, the program. [bold red]Press 2[/bold red]")
