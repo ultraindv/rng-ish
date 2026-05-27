@@ -28,15 +28,16 @@ cd rng-ish
 ```
 pyinstaller --onefile --copy-metadata rich rng-ish.py
 ```
+- You're done, enjoy.
 
 ### (Optional) Compile Into an AppImage:
 To make and compile into an AppImage:
-- Download linuxdeploy as an AppImage and make sure its executable
+- Download [linuxdeploy](https://github.com/linuxdeploy/linuxdeploy/releases/latest) as an AppImage and make sure its executable
 ```
 chmod +x linuxdeploy-<arch>.AppImage
 ```
 
-- Compile rng-ish using pyinstaller(Refer to Compiling rng-ish) and move the executable in to `rng-ish.AppDir/usr/bin`
+- [Compile rng-ish using pyinstaller](#compiling-rng-ish) and move the executable in to `rng-ish.AppDir/usr/bin`
 ```
 mv dist/rng-ish rng-ish.AppDir/usr/bin/
 ```
@@ -44,3 +45,5 @@ mv dist/rng-ish rng-ish.AppDir/usr/bin/
 -  use linuxdeploy to compile into an AppImage
 ```
 ./linuxdeploy-<arch>.AppImage --appdir rng-ish.AppDir --output appimage
+```
+- You can now run the appimage or add it to your memu using [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher/releases/latest) or [Gear Lever](https://flathub.org/en/apps/it.mijorus.gearlever)
